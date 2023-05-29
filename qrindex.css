@@ -1,0 +1,404 @@
+
+body {
+	position:relative;
+}
+
+
+body h1 {
+    margin:0;
+    margin-top:-10px;
+}
+
+
+table.twocol {
+    width:100%;
+}
+
+body h1 {
+    padding: 10px;
+    border-bottom: 5px solid #f7a76e;
+    color: #953700;
+    text-transform: uppercase;
+}
+
+/********** /// MEP  //// -*****/ 
+
+.presentation {
+	font-family: "Arial";
+    color: gray;
+    font-size: 0.9em;
+    line-height: 1.2em;
+}
+
+.presentation h2 {
+	margin-top: 20px;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #fb713d;
+    display: inline-block;
+    color: black;
+}
+
+
+/********** /// SCANNER COMPNENT   //// -*****/ 
+
+#reader__scan_region.success {
+    border:8px solid #8ae38a;
+}
+
+#reader__scan_region.sameCode {
+    border:8px dashed orange;
+}
+
+/********** /// MARKER ALERT MESSAGE BANNER   //// -*****/ 
+
+div#stateAlert {  
+    position: fixed;
+    opacity: 0;
+    top: 40vh;
+    width:150px;
+    font-size: 3.5em;
+    color: #3AC130;
+    left: 5vw;
+    padding: 5px;
+    background-color: white;
+    border: 3px solid #8ae38a;
+    border-radius:5px;
+    width: 90%;
+    text-align: center;
+    transition:opacity 0.5s linear;
+}
+
+div#stateAlert.visible {
+        opacity:1
+}  
+
+div#stateAlert.warning {
+    border: 3px solid orange;
+    color:orange;
+}
+
+/***   HEADER  ***/ 
+/********** /// HEADER   //// -*****/ 
+
+.header {
+    height:85px;
+    display:block;
+    background-color:#f7a76e;
+        /*
+    * Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=f5951d&c2=ffe1ce&gt=l&gd=dbb
+    */
+    
+    height: 85px;
+    display: block;
+    background-color: #f7a76e;
+    background: #4a5566;
+    background: linear-gradient(0deg, #314260, #264ead);
+    margin-bottom: 40px;
+    border-bottom: 3px solid #293f60;
+    
+}
+
+.header span  {
+    display:inline-block;
+    text-align:center;
+    width: 100%;
+}
+
+.header span  img {
+    height:120px;
+    width: auto;
+}
+
+
+
+
+/***   MENU ***/ 
+
+#MenuCantina {
+	position:absolute;
+	transform:translateX(-200px);
+	bottom: 0;
+	top:0;
+	width: 148px;
+	border-right:2px solid #fbaf3d;
+	background-color:#646262;
+	padding:20px;
+	transition:transform 0.2s linear;
+	z-index:30;
+	margin-top:10px;
+}
+
+
+#MenuCantina.open {
+	transform:translateX(0px);
+}
+
+
+
+#MenuCantina ul {
+		margin:0;padding:0;margin-top:30px;
+}
+#MenuCantina li {
+	margin:10px 0;
+	list-style-type: none;
+
+}
+
+#MenuCantina li a {
+	display:block;
+	padding:15px 2px;
+	text-decoration: none;
+	width:100%;
+	color:white;
+
+}
+
+#MenuCantina li a:hover {
+	background-color:#a5a969;
+	width:100%;
+}
+
+#MenuCantina .footer {
+        color: #cfcfcf;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    width: 100%;
+    display: block;
+}
+
+
+/********** /// CARDS DESIGN     //// -*****/ 
+
+
+.cardshowpanel {
+    padding:20px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 10%, rgb(249 248 248) 100%);
+    min-height:600px;
+}
+
+#options {
+    display:none;
+    animation:fade 1s linear;
+}
+
+.visible {
+    display:block!important;
+}
+
+
+.levelmarker {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background: gray;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.qritem {
+    display: inline-block;
+    background-color:white;
+    overflow:hidden;
+    padding:25px;
+    
+    /* Credit card format in print mode */ 
+    width: 280px;
+    height: 150px;
+    padding:25px;
+    border:1px solid rgb(163, 163, 163);
+    border-top:4px solid green;
+    border-radius:10px;
+    margin:15px;
+    /*box-shadow:3px 2px 2px #ccc;*/
+}
+
+
+/*  RemainCounter : students remainig to pass */
+
+#remainDetail {
+    background-color: #d5d5d5;
+}
+
+
+
+.RemainCounter {
+    padding: 10px 15px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 17px;
+    margin: 2px 10px;
+    font-weight: bolder;
+    background-color: white;
+    margin: 8px 5px;
+}
+
+
+.RemainCounter.c6b, .RemainCounter.c6a { border-color:green;color:green;}
+.RemainCounter.c5b { border-color:rgb(6, 92, 206);color:rgb(6, 92, 206);}
+.RemainCounter.c4b { border-color:rgb(87, 0, 128);color:rgb(87, 0, 128);}
+.RemainCounter.c3b { border-color:rgb(128, 0, 43);color:rgb(128, 0, 43);}
+.RemainCounter.c2b { border-color:rgb(128, 68, 0);color:rgb(128, 68, 0);}
+.RemainCounter.c1b { border-color:rgb(240, 158, 5);color:rgb(240, 158, 5);}
+
+.qritem.c6a { border-top:4px solid green;  }
+
+.qritem.c6b { border-top:4px solid green;  } 
+.c6a .levelmarker, .c6b .levelmarker { background-color: green;  } 
+.qritem.c5a { border-top:4px solid rgb(6, 92, 206);  } 
+.qritem.c5b { border-top:4px solid rgb(6, 92, 206);  } 
+.c5a .levelmarker, .c5b .levelmarker { background-color:rgb(6, 92, 206);  } 
+.qritem.c4a { border-top:4px solid rgb(87, 0, 128);  } 
+.qritem.c4b { border-top:4px solid rgb(87, 0, 128);  } 
+.c4a .levelmarker, .c4b .levelmarker { background-color: rgb(87, 0, 128);  } 
+.qritem.c3a { border-top:4px solid rgb(128, 0, 43);  } 
+.qritem.c3b { border-top:4px solid rgb(128, 0, 43);  } 
+.c3a .levelmarker, .c3b .levelmarker { background-color: rgb(128, 0, 43);  } 
+.qritem.c2a { border-top:4px solid rgb(128, 68, 0);  } 
+.qritem.c2b { border-top:4px solid rgb(128, 68, 0);  } 
+.c2a .levelmarker, .c2b .levelmarker { background-color: rgb(128, 68, 0);  } 
+.qritem.c1a { border-top:4px solid rgb(240, 158, 5);  } 
+.qritem.c1b { border-top:4px solid rgb(240, 158, 5);  } 
+.c1a .levelmarker, .c1b .levelmarker { background-color: rgb(240, 158, 5);  } 
+.qrstyle {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle!important;
+    margin-right: 50px;
+    margin-bottom: 2px;
+    margin-left: -6px;
+}
+
+
+/********** /// CARD SCANNING ACTION    //// -*****/ 
+
+.qritem.scanned {
+ display:none;
+}
+
+
+
+.qritem {
+    animation:fadetop 1s linear;
+}
+
+.qritem p {
+    display:inline-block;
+}
+
+.qritem p small.label{
+    font-style:italic;
+}
+
+.qritem.scanned.active {
+  border:2px solid red;
+  display:block;	
+}
+.active .uuidlabel { font-weight:bolder;border:1px solid green; }
+
+
+
+
+
+
+/********** /// INTERACT    //// -*****/ 
+
+button.sbutton {
+	background-color: white;
+	color:grey;
+	padding:5px!important;
+}
+
+button.mbutton {
+    position: relative;
+    top: -110px;
+    margin: 2px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    border-top: 4px solid #e97b09;
+    padding: 9px 10px;
+    background-color: #fb713d;
+    color: white;
+    font-weight: bolder;
+    border-bottom: 4px solid #e97b09;
+    z-index: 99;
+    border-radius: 8px;
+    left: 10px;
+}
+
+
+body button {
+    position: relative;
+    z-index: 0;
+    margin: 2px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    border: 1px solid #768095;
+    padding: 15px 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-left: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+  button.action {
+        padding: 15px;
+        border: 3px solid #5E6778;
+        text-transform: uppercase;
+        border-radius: 15px;
+        text-align: center;
+        margin: auto;
+        width: 258px;
+        display: block;
+        color: #5e6778;
+        line-height: 23px;
+        font-family: arial;
+        font-size: 15px;
+  }
+.container {
+	margin-left:0px;
+} 
+
+
+/********** /// ANIMATIONS  //// -*****/ 
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+
+
+@keyframes fadetop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    40% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
